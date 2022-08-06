@@ -1,0 +1,13 @@
+// Vitest Snapshot v1
+
+exports[`should test 1`] = `
+.c0 {
+  background: red;
+}
+
+<h1
+  class="c0"
+>
+  Test
+</h1>
+`;
