@@ -2,7 +2,7 @@
 
 exports[`should test 1`] = `
 .c0 {
-  background: red;
+  background: #F231A5;
 }
 
 <h1
