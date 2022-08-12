@@ -12,8 +12,18 @@ export default (plop) => {
     actions: [
       {
         type: 'add',
-        path: '../src/components/{{pascalCase name}}/index.tsx',
+        path: '../src/components/{{pascalCase name}}/index.ts',
+        templateFile: 'templates/index.ts.hbs'
+      },
+      {
+        type: 'add',
+        path: '../src/components/{{pascalCase name}}/{{pascalCase name}}.tsx',
         templateFile: 'templates/Component.tsx.hbs'
+      },
+      {
+        type: 'add',
+        path: '../src/components/{{pascalCase name}}/{{pascalCase name}}.spec.tsx',
+        templateFile: 'templates/test.tsx.hbs'
       },
       {
         type: 'add',
@@ -22,13 +32,8 @@ export default (plop) => {
       },
       {
         type: 'add',
-        path: '../src/components/{{pascalCase name}}/stories.ts',
-        templateFile: 'templates/stories.ts.hbs'
-      },
-      {
-        type: 'add',
-        path: '../src/components/{{pascalCase name}}/test.tsx',
-        templateFile: 'templates/test.tsx.hbs'
+        path: '../src/components/{{pascalCase name}}/{{pascalCase name}}.stories.tsx',
+        templateFile: 'templates/stories.tsx.hbs'
       }
     ]
   });
@@ -44,48 +49,83 @@ export default (plop) => {
     actions: [
       {
         type: 'add',
-        path: '../src/features/{{pascalCase name}}/pages/Home/index.tsx',
+        path: '../src/features/{{camelCase name}}/pages/Home/index.ts',
+        templateFile: 'templates/index.ts.hbs'
+      },
+      {
+        type: 'add',
+        path: '../src/features/{{camelCase name}}/pages/Home/{{pascalCase name}}.tsx',
         templateFile: 'templates/Component.tsx.hbs'
       },
       {
         type: 'add',
-        path: '../src/features/{{pascalCase name}}/pages/Home/test.tsx',
+        path: '../src/features/{{camelCase name}}/pages/Home/{{pascalCase name}}.spec.tsx',
         templateFile: 'templates/test.tsx.hbs'
       },
       {
         type: 'add',
-        path: '../src/features/{{pascalCase name}}/pages/Home/styles.ts',
+        path: '../src/features/{{camelCase name}}/pages/Home/styles.ts',
         templateFile: 'templates/styles.ts.hbs'
       },
       {
         type: 'add',
-        path: '../src/features/{{pascalCase name}}/pages/Home/stories.ts',
-        templateFile: 'templates/stories.ts.hbs'
+        path: '../src/features/{{camelCase name}}/pages/Home/{{pascalCase name}}.stories.tsx',
+        templateFile: 'templates/stories.tsx.hbs'
       },
       {
         type: 'add',
-        path: '../src/features/{{pascalCase name}}/components/{{pascalCase name}}/index.tsx',
+        path: '../src/features/{{camelCase name}}/components/{{pascalCase name}}/index.ts',
+        templateFile: 'templates/index.ts.hbs'
+      },
+      {
+        type: 'add',
+        path: '../src/features/{{camelCase name}}/components/{{pascalCase name}}/{{pascalCase name}}.tsx',
         templateFile: 'templates/Component.tsx.hbs'
       },
       {
         type: 'add',
-        path: '../src/features/{{pascalCase name}}/components/{{pascalCase name}}/test.tsx',
+        path: '../src/features/{{camelCase name}}/components/{{pascalCase name}}/{{pascalCase name}}.spec.tsx',
         templateFile: 'templates/test.tsx.hbs'
       },
       {
         type: 'add',
-        path: '../src/features/{{pascalCase name}}/components/{{pascalCase name}}/styles.ts',
+        path: '../src/features/{{camelCase name}}/components/{{pascalCase name}}/styles.ts',
         templateFile: 'templates/styles.ts.hbs'
       },
       {
         type: 'add',
-        path: '../src/features/{{pascalCase name}}/components/{{pascalCase name}}/stories.ts',
-        templateFile: 'templates/stories.ts.hbs'
+        path: '../src/features/{{camelCase name}}/components/{{pascalCase name}}/{{pascalCase name}}.stories.tsx',
+        templateFile: 'templates/stories.tsx.hbs'
       },
       {
         type: 'add',
-        path: '../src/features/{{pascalCase name}}/routes/index.tsx',
+        path: '../src/features/{{camelCase name}}/routes/index.ts',
+        templateFile: 'templates/routesIndex.ts.hbs'
+      },
+      {
+        type: 'add',
+        path: '../src/features/{{camelCase name}}/routes/routes.tsx',
         templateFile: 'templates/routes.tsx.hbs'
+      },
+      {
+        type: 'add',
+        path: '../src/features/{{camelCase name}}/store/store.ts',
+        templateFile: 'templates/store.ts.hbs'
+      },
+      {
+        type: 'add',
+        path: '../src/features/{{camelCase name}}/store/index.ts',
+        templateFile: 'templates/storeIndex.ts.hbs'
+      },
+      {
+        type: 'add',
+        path: '../src/features/{{camelCase name}}/service/{{camelCase name}}.ts',
+        templateFile: 'templates/service.ts.hbs'
+      },
+      {
+        type: 'add',
+        path: '../src/features/{{camelCase name}}/service/index.ts',
+        templateFile: 'templates/serviceIndex.ts.hbs'
       }
     ]
   });
@@ -101,8 +141,13 @@ export default (plop) => {
     actions: [
       {
         type: 'add',
-        path: '../src/services/{{camelCase name}}/index.ts',
+        path: '../src/services/{{camelCase name}}/{{camelCase name}}.ts',
         templateFile: 'templates/service.ts.hbs'
+      },
+      {
+        type: 'add',
+        path: '../src/services/{{camelCase name}}/index.ts',
+        templateFile: 'templates/serviceIndex.ts.hbs'
       }
     ]
   });

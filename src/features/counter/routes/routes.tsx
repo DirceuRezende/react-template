@@ -1,10 +1,10 @@
 import { Route, Routes } from 'react-router-dom';
 import Home from '../pages/Home';
 
-const {{pascalCase name}}RoutesRoutes = () => (
+const CounterRoutes = () => (
   <Routes>
     <Route path="/" element={<Home />} />
   </Routes>
 );
 
-export default {{pascalCase name}}RoutesRoutes;
+export default CounterRoutes;

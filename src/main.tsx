@@ -3,13 +3,17 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { StyledThemeProvider } from './styles/styled-theme-provider';
 import App from './App';
+import store from '@/store';
+import { Provider } from 'react-redux';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <StyledThemeProvider>
-        <App />
-      </StyledThemeProvider>
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <StyledThemeProvider>
+          <App />
+        </StyledThemeProvider>
+      </BrowserRouter>
+    </Provider>
   </React.StrictMode>
 );
