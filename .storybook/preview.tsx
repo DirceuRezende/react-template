@@ -1,4 +1,6 @@
+import { Provider } from 'react-redux';
 import { StyledThemeProvider } from '../src/styles/styled-theme-provider';
+import store from '../src/store';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -12,8 +14,10 @@ export const parameters = {
 
 export const decorators = [
   (Story) => (
-    <StyledThemeProvider>
-      <Story />
-    </StyledThemeProvider>
+    <Provider store={store}>
+      <StyledThemeProvider>
+        <Story />
+      </StyledThemeProvider>
+    </Provider>
   ),
 ];
