@@ -1,3 +1,3 @@
-import service from './counter.ts';
+import service from './counter';
 
 export default service;

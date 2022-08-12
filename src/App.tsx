@@ -1,13 +1,7 @@
-import Counter from '@/features/counter/pages/Home';
+import AppRoutes from '@/routes';
 
-import { Route, Routes } from 'react-router-dom';
-
-function App() {
-  return (
-    <Routes>
-      <Route path="/" element={<Counter />} />
-    </Routes>
-  );
-}
+const App = () => {
+  return <AppRoutes />;
+};
 
 export default App;

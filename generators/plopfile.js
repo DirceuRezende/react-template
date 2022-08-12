@@ -54,12 +54,12 @@ export default (plop) => {
       },
       {
         type: 'add',
-        path: '../src/features/{{camelCase name}}/pages/Home/{{pascalCase name}}.tsx',
+        path: '../src/features/{{camelCase name}}/pages/Home/Home.tsx',
         templateFile: 'templates/Component.tsx.hbs'
       },
       {
         type: 'add',
-        path: '../src/features/{{camelCase name}}/pages/Home/{{pascalCase name}}.spec.tsx',
+        path: '../src/features/{{camelCase name}}/pages/Home/Home.spec.tsx',
         templateFile: 'templates/test.tsx.hbs'
       },
       {
@@ -69,7 +69,7 @@ export default (plop) => {
       },
       {
         type: 'add',
-        path: '../src/features/{{camelCase name}}/pages/Home/{{pascalCase name}}.stories.tsx',
+        path: '../src/features/{{camelCase name}}/pages/Home/Home.stories.tsx',
         templateFile: 'templates/stories.tsx.hbs'
       },
       {

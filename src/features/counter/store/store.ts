@@ -36,7 +36,7 @@ function sleep(ms: number) {
 
 export function asyncIncrement(): (dispatch: AppDispatch) => Promise<void> {
   return async function (dispatch: AppDispatch) {
-    await sleep(3000);
+    await sleep(1000);
     dispatch(increment());
   };
 }
